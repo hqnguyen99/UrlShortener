@@ -2,7 +2,7 @@
   "name": "urlshortener",
   "version": "0.0.0",
   "engines": {
-    "node" : "10.19.0"
+    "node": "10.19.0"
   },
   "private": true,
   "scripts": {
@@ -13,14 +13,14 @@
   "dependencies": {
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
+    "debug": "^2.6.9",
     "express": "^4.16.4",
     "helmet": "^4.1.0",
     "http-errors": "^1.6.3",
     "monk": "^7.3.2",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
-    "pug": "2.0.0-beta11",
+    "pug": "^3.0.0",
     "yup": "^0.29.3"
   },
   "devDependencies": {
