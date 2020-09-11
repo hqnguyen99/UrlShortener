@@ -6,6 +6,7 @@ var morgan = require('morgan');
 var cors = require('cors');
 var monk = require('monk');
 var helmet = require('helmet');
+var yup = require('yup');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -17,6 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(express.json());
+app.enable('trust proxy');
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
